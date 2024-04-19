@@ -1,0 +1,9 @@
+.vscode/
+
+objs/
+
+test/*
+!test/*.cpp
+
+example/*
+!example/*.cpp
