@@ -1,9 +1,9 @@
-#include <stdlib.h>
+#include <cstdlib>
 #include <iostream>
 
 #include "base/Allocator.h"
 
-Allocator* Allocator::mAllocator = NULL;
+Allocator* Allocator::mAllocator = nullptr;
 
 void* Allocator::allocate(uint32_t size)
 {

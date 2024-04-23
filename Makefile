@@ -8,7 +8,7 @@ TOR_DIR 	= $(shell pwd)
 SRC_DIR 	= $(TOR_DIR)/src
 OBJS_PATH 	= $(TOR_DIR)/objs
 
-CXX_FLAGS 	= -O2 -g -I$(TOR_DIR)/src
+CXX_FLAGS 	= -O0 -g -I$(TOR_DIR)/src
 
 LD_FLAGS 	= -lpthread -lrt
 
@@ -63,9 +63,9 @@ TARGET_TEST_EXAMPLE_ALSA_RTSP_SERVER		= $(TOR_DIR)/example/alsa_rtsp_server
 
 
 
-all: MKAE_DIR TARGET_TEST TARGET_EXAMPLE
+all: MAKE_DIR TARGET_TEST TARGET_EXAMPLE
 
-MKAE_DIR:
+MAKE_DIR:
 	@-mkdir -p $(OBJS_PATH)
 
 
